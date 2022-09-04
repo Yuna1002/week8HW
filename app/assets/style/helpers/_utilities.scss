@@ -1,0 +1,113 @@
+$utilities: map-merge(
+  $utilities,
+  (
+    "font-size":
+      map-merge(
+        map-get($utilities, "font-size"),
+        (
+          responsive: true,
+          rfs: false,
+        )
+      ),
+    "border":
+      map-merge(
+        map-get($utilities, "border"),
+        (
+          responsive: true,
+        )
+      ),
+    "border-top":
+      map-merge(
+        map-get($utilities, "border-top"),
+        (
+          responsive: true,
+        )
+      ),
+    "border-end":
+      map-merge(
+        map-get($utilities, "border-end"),
+        (
+          responsive: true,
+        )
+      ),
+    "border-bottom":
+      map-merge(
+        map-get($utilities, "border-bottom"),
+        (
+          responsive: true,
+        )
+      ),
+    "border-start":
+      map-merge(
+        map-get($utilities, "border-start"),
+        (
+          responsive: true,
+        )
+      ),
+    "position":
+      map-merge(
+        map-get($utilities, "position"),
+        (
+          responsive: true,
+        )
+      ),
+    "background-color": //無作用？？
+    map-merge(
+        map-get($utilities, "background-color"),
+        (
+          responsive: true,
+        )
+      ),
+  )
+);
+.btn-triangle {
+  background-color: $white;
+  color: $black;
+  border: 1px solid $black;
+  padding: 8px 48px;
+  position: relative;
+  text-decoration: none;
+  font-size: $font-size-base * 1.125;
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-left: 16px transparent solid;
+    border-bottom: 16px $primary solid;
+  }
+  &:hover {
+    background-color: $primary;
+    color: $white;
+    &::after {
+      border-bottom-color: $black;
+    }
+  }
+}
+
+.btn-triangle-0 {
+  background-color: transparent;
+  color: $black;
+  padding: 8px 48px;
+  position: relative;
+  text-decoration: none;
+  font-size: $font-size-base * 1.125;
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-left: 16px transparent solid;
+    border-bottom: 16px $primary solid;
+  }
+  &:hover {
+    background-color: $primary;
+    color: $white;
+    &::after {
+      border-bottom-color: $black;
+    }
+  }
+}
+.noto {
+  font-family: "Noto Sans TC";
+}

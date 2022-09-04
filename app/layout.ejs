@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title><%- title %></title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Squada+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./assets/style/all.css" />
+  </head>
+
+  <body class="bg-light">
+    <header class="border-bottom-lg">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light py-4 py-lg-0">
+          <div class="container-fluid">
+            <h1 class="logo navbar-brand">
+              <a href="index.html" class="d-block">ART NFT</a>
+            </h1>
+            <form
+              class="d-flex ms-auto me-6 me-lg-0 py-lg-8 px-lg-8 px-xl-12 border-start-lg"
+            >
+              <input
+                class="form-control me-2 border-0 d-none d-lg-block bg-light"
+                type="search"
+                placeholder="搜尋作品名稱、藝術家名稱"
+                aria-label="Search"
+                style="width: 288px"
+              />
+              <button class="btn pe-lg-0" type="submit">
+                <i class="fa-solid fa-magnifying-glass fs-sm"></i>
+              </button>
+            </form>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="collapse navbar-collapse flex-lg-grow-0"
+              id="navbarSupportedContent"
+            >
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active fw-bold py-lg-10 px-lg-8 px-xl-12 border-start-lg"
+                    aria-current="page"
+                    href="#"
+                    >探索</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link active fw-bold py-lg-10 px-lg-8 px-xl-12 border-start-lg"
+                    aria-current="page"
+                    href="#"
+                    >市值</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link active py-lg-10 ps-lg-12 border-start-lg"
+                    aria-current="page"
+                    href="#"
+                    ><i class="fa-solid fa-wallet"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <%- contents %>
+
+    <footer class="footer">
+      <p class="py-6 text-center noto">© ART NFT. All Rights Reserved</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+      integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D"
+      crossorigin="anonymous"
+      async
+    ></script>
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+</html>
