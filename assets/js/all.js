@@ -5,6 +5,7 @@ $(function () {
   var swiper = new Swiper(".artistSwiper", {
     spaceBetween: 24,
     slidesPerView: 1,
+    loop: true,
     breakpoints: {
       992: {
         slidesPerView: 3
