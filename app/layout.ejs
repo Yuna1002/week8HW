@@ -30,8 +30,8 @@
   </head>
 
   <body class="bg-light">
-    <header class="border-bottom-lg">
-      <div class="container">
+    <header class="border-bottom sticky-top bg-light">
+      <div class="container-lg px-0">
         <nav class="navbar navbar-expand-lg navbar-light bg-light py-4 py-lg-0">
           <div class="container-fluid">
             <h1 class="logo navbar-brand">
@@ -67,28 +67,38 @@
               id="navbarSupportedContent"
             >
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
+                <li
+                  class="nav-item border-start-lg d-flex align-items-center border-bottom border-bottom-lg-0"
+                >
                   <a
-                    class="nav-link active fw-bold py-lg-10 px-lg-8 px-xl-12 border-start-lg"
+                    class="fw-bold py-lg-10 px-lg-8 px-xl-12 w-100 py-6 text-center"
                     aria-current="page"
-                    href="#"
+                    href="explore.html"
                     >探索</a
                   >
                 </li>
-                <li class="nav-item">
+                <li
+                  class="nav-item border-start-lg d-flex align-items-center border-bottom border-bottom-lg-0"
+                >
                   <a
-                    class="nav-link active fw-bold py-lg-10 px-lg-8 px-xl-12 border-start-lg"
+                    class="fw-bold py-lg-10 px-lg-8 px-xl-12 w-100 py-6 text-center"
                     aria-current="page"
                     href="#"
                     >市值</a
                   >
                 </li>
-                <li class="nav-item">
+                <li class="nav-item border-start-lg d-flex align-items-center">
                   <a
-                    class="nav-link active py-lg-10 ps-lg-12 border-start-lg"
+                    class="py-lg-10 ps-lg-12 w-100 py-6 text-center"
                     aria-current="page"
                     href="#"
-                    ><i class="fa-solid fa-wallet"></i>
+                    ><i class="fa-solid fa-wallet d-none d-lg-block"></i>
+                    <button
+                      type="button"
+                      class="btn btn-primary text-white w-100 py-6 d-lg-none"
+                    >
+                      連結錢包
+                    </button>
                   </a>
                 </li>
               </ul>
@@ -110,6 +120,7 @@
       crossorigin="anonymous"
       async
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
   </body>

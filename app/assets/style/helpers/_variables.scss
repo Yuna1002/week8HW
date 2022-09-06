@@ -273,6 +273,7 @@ $spacers: (
   12: $spacer * 3,
   18: $spacer * 4.5,
   20: $spacer * 5,
+  22: $spacer * 5.5,
 ) !default;
 
 $negative-spacers: if(
@@ -306,10 +307,10 @@ $body-text-align: null !default;
 //
 // Style anchor elements.
 
-$link-color: $primary !default;
+$link-color: $black !default; //$primary !default;
 $link-decoration: underline !default;
 $link-shade-percentage: 20% !default;
-$link-hover-color: shift-color($link-color, $link-shade-percentage) !default;
+$link-hover-color: $primary !default; //shift-color($link-color, $link-shade-percentage) !default;
 $link-hover-decoration: null !default;
 
 $stretched-link-pseudo-element: after !default;
@@ -473,7 +474,7 @@ $h6-font-size: $font-size-base !default;
 // scss-docs-start font-sizes
 $font-sizes: (
   // 1: $h1-font-size,
-  // 2: $h2-font-size,
+  // 2: $-font-size,
   // 3: $h3-font-size,
   // 4: $h4-font-size,
   // 5: $h5-font-size,
@@ -981,19 +982,19 @@ $nav-link-padding-y: 0.5rem !default;
 $nav-link-padding-x: 1rem !default;
 $nav-link-font-size: null !default;
 $nav-link-font-weight: null !default;
-$nav-link-color: $link-color !default;
+$nav-link-color: $gray-600; //$link-color !default;
 $nav-link-hover-color: $link-hover-color !default;
 $nav-link-transition: color 0.15s ease-in-out,
   background-color 0.15s ease-in-out, border-color 0.15s ease-in-out !default;
 $nav-link-disabled-color: $gray-600 !default;
 
-$nav-tabs-border-color: $gray-300 !default;
+$nav-tabs-border-color: $black; //$gray-300 !default;
 $nav-tabs-border-width: $border-width !default;
 $nav-tabs-border-radius: $border-radius !default;
 $nav-tabs-link-hover-border-color: $gray-200 $gray-200 $nav-tabs-border-color !default;
-$nav-tabs-link-active-color: $gray-700 !default;
+$nav-tabs-link-active-color: $black; //$gray-700 !default;
 $nav-tabs-link-active-bg: $body-bg !default;
-$nav-tabs-link-active-border-color: $gray-300 $gray-300 $nav-tabs-link-active-bg !default;
+$nav-tabs-link-active-border-color: $black $black $nav-tabs-link-active-bg; //$gray-300 $gray-300 $nav-tabs-link-active-bg !default;
 
 $nav-pills-border-radius: $border-radius !default;
 $nav-pills-link-active-color: $component-active-color !default;
