@@ -6,6 +6,8 @@ $(function () {
     spaceBetween: 24,
     slidesPerView: 1,
     loop: true,
+    centeredSlides: true,
+    //
     breakpoints: {
       992: {
         slidesPerView: 3
